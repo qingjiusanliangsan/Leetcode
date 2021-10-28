@@ -10,36 +10,15 @@ import java.util.List;
  */
 public class Solution {
     public int numTrees(int n) {
-        int res = 0;
-        int [] nums = new int[n];
-        for(int i=0;i<n;i++){
-            nums[i] = i+1;
-        }
-        for(int i=0;i<n;i++){
-            List<Integer> tem = new ArrayList<>();
-            make(tem,i,i+1,e);
-        }
+        int[] G = new int[n + 1];
+        G[0] = 1;
+        G[1] = 1;
 
-        return res;
-    }
-    public void make(List<Integer> Il,int z, int s, int e){
-        List<Integer> tem = new ArrayList<>(Il);
-        tem.add(z);
-        if(s==e){
-            tem.add(e);
-            System.out.println(Arrays.toString(tem.toArray()));
-        }
-        else if(s+1 == e){
-            make(tem,s,e,e);
-            make(tem,e,s,s);
-        }
-        else{
-            for(int i=s+1;i<e;i++){
-                make(tem,i,s,i-1);
-                make(tem,i,i+1,e);
+        for (int i = 2; i <= n; ++i) {
+            for (int j = 1; j <= i; ++j) {
+                G[i] += G[j - 1] * G[i - j];
             }
         }
-
+        return G[n];
     }
-
 }
