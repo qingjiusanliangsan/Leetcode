@@ -48,6 +48,14 @@ public class DataStruct {
                 // TODO Auto-generated method stub
                 return name.hashCode();
             }
+
+            @Override
+            public String toString() {
+                return "stu{" +
+                        "age=" + age +
+                        ", name='" + name + '\'' +
+                        '}';
+            }
         }
 
         Scanner sc = new Scanner(System.in);
