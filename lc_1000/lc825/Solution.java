@@ -20,7 +20,6 @@ public class Solution {
                     count++;
                 }
             }
-
         }
 
         return res;
