@@ -1,4 +1,4 @@
-package lc_1000.lc1027;
+package lc_1500.lc1027;
 
 import java.util.HashMap;
 import java.util.Map;

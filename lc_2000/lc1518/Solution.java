@@ -1,4 +1,4 @@
-package lc_1500.lc1518;
+package lc_2000.lc1518;
 
 public class Solution {
     public int numWaterBottles(int numBottles, int numExchange) {

@@ -1,4 +1,4 @@
-package LCP.lcp18.lcp28;
+package LCP.lcp28;
 
 import java.util.Arrays;
 
