@@ -3,6 +3,28 @@ package lc_1000.lc825;
 import java.util.Arrays;
 
 public class Solution {
+    public int numFriendRequests1(int[] ages) {
+        int res =0,n=ages.length,count=1;
+        Arrays.sort(ages);
+        int a=0,b=0;
+        while (b<n){
+            if(ages[b]>14){
+                if(b==n-1 || b<n-1 && ages[b] != ages[b+1]){
+                    int tem = (int) (Math.floor(ages[b]*0.5)+7);
+                    while (a<b && ages[a]<=tem){
+                        ++a;
+                    }
+                    res = res + (b-a)*count;
+                    count = 1;
+                }
+                else{
+                    ++count;
+                }
+            }
+            ++b;
+        }
+        return res;
+    }
     public int numFriendRequests(int[] ages) {
         int res =0,n=ages.length,count=1;
         Arrays.sort(ages);
