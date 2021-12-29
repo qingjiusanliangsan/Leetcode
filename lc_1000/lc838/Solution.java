@@ -11,7 +11,7 @@ public class Solution {
                 A = st[i-1];
                 int a= i;
                 int b=i;
-                while (b<n-1){
+                while (b<n){
                     if(st[b]!='.'){
                         B=st[b];
                         break;
@@ -20,14 +20,10 @@ public class Solution {
                 }
                 --b;
                 if(A=='R' && B=='L'){
-                    i=b;
                     while (a<b){
                         st[a++]='R';
                         st[b--]='L';
                     }
-                }
-                else if(A=='L' && B=='R'){
-                    i = b+1;
                 }
                 else if(A=='L' && B=='L'){
                     while (i<=b){
@@ -41,6 +37,7 @@ public class Solution {
                         ++i;
                     }
                 }
+                i = b+1;
             }
         }
         String res = new String(st);
