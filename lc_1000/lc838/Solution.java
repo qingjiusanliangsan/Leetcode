@@ -4,13 +4,13 @@ public class Solution {
     public String pushDominoes(String dominoes) {
         dominoes = "L" + dominoes + "R";
         char[] st = dominoes.toCharArray();
-        int n = st.length;
+        int n = st.length,a,b;
         char A,B='.';
         for(int i=1;i<n-1;i++){
             if(st[i]=='.'){
                 A = st[i-1];
-                int a= i;
-                int b=i;
+                a= i;
+                b=i;
                 while (b<n){
                     if(st[b]!='.'){
                         B=st[b];
@@ -20,6 +20,7 @@ public class Solution {
                 }
                 --b;
                 if(A=='R' && B=='L'){
+                    i = b+1;
                     while (a<b){
                         st[a++]='R';
                         st[b--]='L';
@@ -37,7 +38,9 @@ public class Solution {
                         ++i;
                     }
                 }
-                i = b+1;
+                else{
+                    i = b+1;
+                }
             }
         }
         String res = new String(st);
