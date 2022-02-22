@@ -1,4 +1,4 @@
-package competition.double52;
+package competition.double_52;
 
 /**
  * @author qingjiusanliangsan
