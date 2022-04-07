@@ -1,4 +1,4 @@
-package ABhand;
+package ABhand.sortColl;
 
 import java.util.Arrays;
 // https://www.cnblogs.com/onepixel/articles/7674659.html
@@ -9,10 +9,51 @@ public class SortSet {
 //        SortSet.bubblesort(num);
 //        SortSet.selectsort(num);
 //        SortSet.inserttsort(num);
-        SortSet.shellsort(num);
+//        SortSet.shellsort(num);
+//        SortSet.mergesort(num,0,num.length-1);
+//        Quicksort.quicksort(num,0,num.length-1);
+        HeapSort.heapSort(num);
         System.out.println(Arrays.toString(num));
     }
 
+    public static void mergesort(int[] num,int a,int b){
+        if(a==b){
+            return;
+        }
+        int c = a+(b-a)/2;
+        mergesort(num,a,c);
+        mergesort(num,c+1,b);
+        merge(num,a,c,b);
+        return;
+    }
+    public static void merge(int[] num,int a,int c,int b){
+        int s = a;
+        int[] tem = new int[b-a+1];
+        int pre = 0;
+        int d = c+1;
+        while (a<=c && d<=b){
+            if(num[a]<=num[d]){
+                tem[pre] = num[a];
+                a++;
+            }
+            else{
+                tem[pre] = num[d];
+                d++;
+            }
+            ++pre;
+        }
+        while (a<=c){
+            tem[pre++] = num[a++];
+        }
+        while (d<=b){
+            tem[pre++] = num[d++];
+        }
+        for(int i=0;i<pre;++i){
+            num[s] = tem[i];
+            ++s;
+        }
+        return;
+    }
     public static void shellsort(int[] num){
         int n = num.length;
         for(int gap = (int)Math.floor(n/2);gap>0;gap = (int)Math.floor(gap/2)){
