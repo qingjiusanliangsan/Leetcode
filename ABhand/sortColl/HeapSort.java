@@ -29,7 +29,6 @@ public class HeapSort {
             int temp = arr[i];
             arr[i] = arr[0];
             arr[0] = temp;
-
             //重新对堆进行调整
             adjustHeap(arr, 0, i);
         }

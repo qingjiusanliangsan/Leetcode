@@ -12,7 +12,8 @@ public class SortSet {
 //        SortSet.shellsort(num);
 //        SortSet.mergesort(num,0,num.length-1);
 //        Quicksort.quicksort(num,0,num.length-1);
-        HeapSort.heapSort(num);
+//        HeapSort.heapSort(num);
+        CountSort.countingSort(num);
         System.out.println(Arrays.toString(num));
     }
 
