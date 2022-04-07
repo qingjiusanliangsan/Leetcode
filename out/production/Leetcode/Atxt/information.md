@@ -1,5 +1,3 @@
-学习勤奋，有很强的进取心，不论是本科还是研究生学习成绩一直都在前lie;做事认真负责，能够吃苦耐劳，有强烈的团队合作意识；性格开朗, 热爱运动，对新鲜事物充满好奇心。
-
 412724199804024453
 
 18700813387@163.com
@@ -54,3 +52,64 @@
  2021.07  ***\*CCF-A\**** 第二作者：Li J, Han L, Chen R, et al. Identity-Preserving Face Anonymization via Adaptively Facial Attributes Obfuscation[C]//Proceedings of the 29th ACM International Conference on Multimedia. 2021: 3891-3899.2020.10  
 
 2020-10 ***\*CCF-C\**** 第二作者：Li J, Han L, Zhang H, et al. Learning disentangled representations for identity preserving surveillance face camouflage[C]//2020 25th International Conference on Pattern Recognition (ICPR). IEEE, 2021: 9748-9755.
+
+
+
+**个人评价**
+
+学习勤奋，有很强的进取心，不论是本科还是研究生学习成绩一直都在前列;做事认真负责，能够吃苦耐劳，有强烈的团队合作意识；性格开朗, 热爱运动，对新鲜事物充满好奇心。
+
+
+
+**职业生涯规划**
+
+暑期实习应聘成功只是第一步，因为我的目标是通过暑期实习拿到转正机会，进而获得秋招的正式offer。
+
+通过暑期实习应聘的话，我首先会在暑期实习期间，对自己的技能技能进行查缺补漏，提升自己的代码水平，将自己的技术能力与我们的开发需求对齐，以求能够完成我们软件中心的相应任务。
+
+我会在实习期间进一步提升自己，不但要做到能够完成相应的业务能力要求，还要争取做到在技术方面能够有更深的掌握。我将和组里的同学一块学习进步，共同解决遇到的问题，不但锻炼自己的团队协作能力，还能够对我们的业务有更深入的掌握和理解。
+
+我希望通过暑期的实习，一方面是要成功完成实习期间的任务和考核，另一方面是能够提前适应软件中心的工作，争取能够以优异的成绩转正。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
