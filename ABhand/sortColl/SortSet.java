@@ -4,7 +4,7 @@ import java.util.Arrays;
 // https://www.cnblogs.com/onepixel/articles/7674659.html
 public class SortSet {
     public static void main(String[] args) {
-        int[] num = {8,9,2,10,3,1,43,2,65,79};
+        int[] num = {8,9,65,79,2,10,3,1,43,2};
         System.out.println(Arrays.toString(num));
 //        SortSet.bubblesort(num);
 //        SortSet.selectsort(num);
@@ -13,7 +13,9 @@ public class SortSet {
 //        SortSet.mergesort(num,0,num.length-1);
 //        Quicksort.quicksort(num,0,num.length-1);
 //        HeapSort.heapSort(num);
-        CountSort.countingSort(num);
+//        CountSort.countingSort(num);
+//        BucketSort.bucketsort(num,5);
+        RadixSort.radixSort(num);
         System.out.println(Arrays.toString(num));
     }
 
