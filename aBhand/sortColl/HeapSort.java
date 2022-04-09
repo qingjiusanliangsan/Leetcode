@@ -1,4 +1,4 @@
-package ABhand.sortColl;
+package aBhand.sortColl;
 
 
 public class HeapSort {

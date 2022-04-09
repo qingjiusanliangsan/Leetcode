@@ -1,4 +1,4 @@
-package ABhand.sortColl;
+package aBhand.sortColl;
 
 import java.util.Arrays;
 // https://www.cnblogs.com/onepixel/articles/7674659.html

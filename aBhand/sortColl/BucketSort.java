@@ -1,4 +1,4 @@
-package ABhand.sortColl;
+package aBhand.sortColl;
 
 import java.util.ArrayList;
 import java.util.Arrays;
