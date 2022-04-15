@@ -1,5 +1,4 @@
 package Interview.huawei;
-
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -20,7 +19,6 @@ public class Main2 {
             }
             relyList.add(list);
         }
-
         int[] state = new int[n];
         boolean canStart = false;
         int step = 0;
