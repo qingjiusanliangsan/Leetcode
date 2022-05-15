@@ -75,6 +75,23 @@
 
 
 
+暑期实习应聘成功只是第一步，因为我的目标是通过暑期实习拿到转正机会，进而获得秋招的正式offer。
+
+如果暑期实习应聘成功的话，我首先会在暑期实习期间，努力提升自己技术水平，将自己的技术能力与我们的业务需求对齐，是自己能够完成相应业务。
+
+进一步的话，如果能够在转正，我希望在一到两年里；
+
+
+
+1.我会在实习期间，熟悉并学习相应的业务要求，提升自己的技能水平，完成暑期实践期间的项目，争取以优异的成绩结束暑期答辩，进而获取转正机会。
+
+
+
+1. During the internship, I will familiarize myself with and learn the corresponding skill requirements, 
+2. improve my skills, complete the projects during the summer practice, 
+3. and strive to finish the summer defense with excellent results, 
+4. so as to obtain the opportunity of becoming a full-time employee.
+
 
 
 

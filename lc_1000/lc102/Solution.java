@@ -2,51 +2,44 @@ package lc_1000.lc102;
 
 import ALib.TreeNode;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
+
 /**
  * @author qingjiusanliangsan
  * create 2021-05-25-15:26
  */
 
 public class Solution {
-    class UTree{
-        TreeNode tree;
-        int h;
-        public UTree(TreeNode t,int a){
-            tree = t;
-            h = a;
-        }
-    }
     public List<List<Integer>> levelOrder(TreeNode root) {
-        int a = 0;
-        Queue<UTree> TQ = new LinkedList<>();
         List<List<Integer>> res = new ArrayList<>();
+        List<Integer> tem = new ArrayList<>();
         if(root == null){
             return res;
         }
-        TQ.add(new UTree(root,a));
-        List<Integer> temL = new ArrayList<>();
-        while(!TQ.isEmpty()){
-            UTree tem = TQ.remove();
-            if(tem.tree.left != null)
-                TQ.add(new UTree(tem.tree.left,tem.h+1));
-            if(tem.tree.right != null)
-                TQ.add(new UTree(tem.tree.right,tem.h+1));
+        Queue<TreeNode> qu = new LinkedList<>();
+        qu.add(root);
+        int a = 1;
+        int b=0;
 
-            if(tem.h == a){
-                temL.add(tem.tree.val);
+        while (!qu.isEmpty()){
+            TreeNode node = qu.remove();
+            if(node.left != null){
+                qu.add(node.left);
+                ++b;
             }
-            else if(tem.h != a){
-                res.add(new ArrayList<>(temL));
-                ++a;
-                temL.clear();
-                temL.add(tem.tree.val);
+            if(node.right != null){
+                qu.add(node.right);
+                ++b;
+            }
+            tem.add(node.val);
+            --a;
+            if(a==0){
+                res.add(new ArrayList<>(tem));
+                a=b;
+                b=0;
+                tem.clear();
             }
         }
-        res.add(new ArrayList<>(temL));
         return res;
     }
 }
