@@ -47,4 +47,32 @@ public class Solution {
         }
         return false;
     }
+
+    public static void main(String[] args) {
+//        try{
+//            System.out.println("try-");
+//            int[] a = new int[0];
+//            a[0]=1;
+//            System.out.println(a[0]+"-");
+//        }
+//        catch (Exception e){
+//            System.out.println("catch-");
+//        }
+//        finally {
+//            System.out.println("finally-");
+//        }
+        String s1 = "ZhongWang";
+        String s2 = "RuanJian";
+        String s3 = s1+s2;
+        String s4 = "ZhongWang" + "RuanJian";
+        String s5 = "ZhongWangRuanJian";
+        String s6 = s1 + new String("RuanJian");
+        String s7 = new String("ZhongWang") + new String("RuanJian");
+        String s8 = s7.intern();
+        System.out.println(s3==s4);
+        System.out.println(s4==s5);
+        System.out.println(s5==s6);
+        System.out.println(s5==s7);
+        System.out.println(s5==s8);
+    }
 }
